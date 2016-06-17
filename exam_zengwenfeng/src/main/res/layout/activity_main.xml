@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzptc.zengwenfeng.exam.MainActivity">
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/tool_top"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@android:color/holo_red_light"
+      >
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:src="@mipmap/actionbar_menu"
+          />
+      <ImageView
+          android:id="@+id/iv_music"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@mipmap/actionbar_music_prs"
+          android:layout_marginLeft="40dp"
+          />
+
+      <ImageView
+          android:id="@+id/iv_dis"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@mipmap/actionbar_discover_prs"
+          android:layout_marginLeft="10dp"
+          />
+
+      <ImageView
+          android:id="@+id/iv_friends"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@mipmap/actionbar_friends_prs"
+          android:layout_marginLeft="10dp"
+          />
+
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:src="@mipmap/actionbar_search"
+          android:layout_marginLeft="40dp"
+          />
+
+  </android.support.v7.widget.Toolbar>
+
+<android.support.v4.view.ViewPager
+    android:id="@+id/vp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/tool_top"
+    >
+</android.support.v4.view.ViewPager>
+
+</RelativeLayout>
